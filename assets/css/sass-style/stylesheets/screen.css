@@ -70,25 +70,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 13, ../sass/screen.sass */
 #welcome {
   text-align: center;
+  margin-bottom: 0px;
 }
 
-/* line 16, ../sass/screen.sass */
+/* line 17, ../sass/screen.sass */
 div img {
   border-radius: 6px;
 }
 
 /* line 20, ../sass/screen.sass */
-#about-me {
-  position: absolute;
-}
-@media (min-width: 768px) {
-  /* line 20, ../sass/screen.sass */
-  #about-me {
-    position: relative;
-  }
-}
-
-/* line 25, ../sass/screen.sass */
 #and-mig {
   width: 300px;
   height: 200px;
