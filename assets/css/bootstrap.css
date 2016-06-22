@@ -3118,8 +3118,8 @@ fieldset[disabled] .btn-default.focus {
 }
 .btn-primary {
   color: #fff;
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  background-color: rgba(51, 122, 183, 0.7);
+  border-color: rgba(46, 109, 164, 0.7);
 }
 .btn-primary:focus,
 .btn-primary.focus {
@@ -3175,8 +3175,8 @@ fieldset[disabled] .btn-primary.focus {
 }
 .btn-success {
   color: #fff;
-  background-color: #5cb85c;
-  border-color: #4cae4c;
+  background-color: rgba(92, 184, 92, 0.7);
+  border-color: rgba(76, 174, 76, 0.7);
 }
 .btn-success:focus,
 .btn-success.focus {
@@ -4961,7 +4961,6 @@ a.badge:focus {
 .jumbotron {
   padding-top: 30px;
   padding-bottom: 30px;
-  margin-bottom: 30px;
   color: inherit;
   background-color: #eee;
 }
