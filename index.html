@@ -4,7 +4,6 @@
 <head>
     <script type="text/javascript" src="assets/js/jquery-2.2.2.js"></script>
     <script type="text/javascript" src="assets/js/parallax.js"></script>
-    <script type="text/javascript" src="assets/js/parallax.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery.slicknav.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.js"></script>
     <script type="text/javascript" src="assets/js/typeit.min.js"></script>
@@ -12,6 +11,7 @@
     <link rel="icon" href="" type="image/x-icon" />
     <link href="assets/css/sass-style/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
     <link href="assets/css/sass-style/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="assets/css/animate.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="assets/css/slicknav.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="assets/css/bootstrap.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="assets/css/style.css" media="screen" title="no title" charset="utf-8">
@@ -85,9 +85,10 @@
         </div>
     <br><br><br><br><br>
     </div>
-    <div class="container-fluid" style="height: 400px">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-xs-12" style="text-align:center">
+          <br><br><br>
           <h2>I WORK WITH</h2>
         </div>
         <div class="col-xs-6">
@@ -97,9 +98,10 @@
           <img class="img-responsive hideme" src="assets/images/adobe.png" alt="adobe">
         </div>
       </div>
+      <br><br><br>
     </div>
     <div style="background-color: rgba(0, 0, 0, 0.2); margin-top:-10px">
-    <div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-speed="0.5" data-image-src="assets/images/lego-ctrlkey.jpeg" data-natural-width="1400" data-natural-height="900">
+    <div class="parallax-container" data-parallax="scroll" data-position="top" data-speed="0.5" data-image-src="assets/images/lego-ctrlkey.jpeg" data-natural-width="1400" data-natural-height="900">
     <br><br><br><br><br>
     <div class="container-fluid" id="portfolio">
         <div class="row">
@@ -112,33 +114,42 @@
                     </div>
                     <br>
                     <div class="row" style="text-align: center">
-                        <div class="col-xs-12 col-md-4">
-                            <a class="btn btn-primary" href="#" role="button">Codetrotters Project #1: Profile Website</a>
+                        <div class="col-xs-12 col-md-3">
+                            <a href="#" role="button"><img src=".." alt="" />Codetrotters Project #1: Profile Website</a>
                         </div>
-                        <div class="col-xs-12 col-md-4">
-                            <a class="btn btn-primary disabled" href="#" role="button">Codetrotters Project #2: To-do list</a>
+                        <div class="col-xs-12 col-md-3">
+                            <span></span>
                         </div>
-                        <div class="col-xs-12 col-md-4">
-                            <a class="btn btn-primary" href="#" role="button">Codetrotters Project #3: Final Project</a>
+                        <div class="col-xs-12 col-md-3" style="background: url(assets/images/todolist.jpg); height:200px">
+                            <div class="transparence">
+                              <h3><a href="#" role="button" style="display:flex; justify-content:center; align-items:center">Codetrotters Project #2: To-do list</a></h3>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-3">
+                            <span></span>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="row" style="text-align: center">
+                        <div class="col-xs-12 col-md-3">
+                          <span></span>
+                        </div>
+                        <div class="col-xs-12 col-md-3">
+                            <a href="#" role="button"><img src="assets/images/videogame.jpg" alt="" style="height:150px"/>Codetrotters Project #3: Final Project</a>
+                        </div>
+                        <div class="col-xs-12 col-md-3">
+                          <span></span>
+                        </div>
+                        <div class="col-xs-12 col-md-3">
+                            <a href="#" role="button"><img src="assets/images/friskiesproj.jpg" alt="" style="height:150px"/>Codetrotters Project #4: Final Project</a>
                         </div>
                     </div>
                     <br>
-                    <div class="row" style="text-align: center">
-                        <div class="col-xs-12 col-md-4">
-                            <a class="btn btn-success" href="http://www.friskiespr.com" role="button">Freelance Project #1: Friskies PR</a>
-                        </div>
-                        <div class="col-xs-12 col-md-4">
-                            <a class="btn btn-success disabled" href="#" role="button">Freelance Project #2</a>
-                        </div>
-                        <div class="col-xs-12 col-md-4">
-                            <a class="btn btn-success disabled" href="#" role="button">Freelance Project #3</a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <br><br><br><br><br><br><br><br><br><br>    <br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>    <br><br><br><br><br><br><br><br>
     <div class="container">
             <div class="row" style="text-align:center">
                 <div class="col-xs-12">
@@ -146,31 +157,35 @@
                 </div>
             </div>
     </div>
-    <br><br><br><br><br><br><br><br><br><br>    <br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>    <br><br><br><br><br><br><br><br>
     <div class="container" id="contactme">
         <div class="jumbotron" style="background-color: rgba(255, 255, 255, 0.2); color: white">
             <div class="row">
                 <h2 style="text-align: center">CONTACT ME</h2>
                 <br>
+                <form action="https://formspree.io/mfjvacas@gmail.com"
+                method="POST">
                 <div class="col-xs-6">
                     <h2>Your Name</h2>
-                    <input type="text" class="form-control" placeholder="Your Name">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name">
                 </div>
                 <div class="col-xs-6">
                     <h2>Your Email</h2>
-                    <input type="text" class="form-control" placeholder="Your Email">
+                    <input type="email" name="_replyto" class="form-control" placeholder="Your Email">
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-12">
                     <h2>Message</h2>
-                    <textarea class="form-control" rows="3" placeholder="Your Message"></textarea>
+                    <textarea class="form-control" type="email" name="email" rows="3" placeholder="Your Message"></textarea>
                     <br>
-                    <input class="btn btn-default" type="submit" value="Submit">
+                    <input class="btn btn-default" type="submit" value="Send">
                 </div>
             </div>
+          </form>
         </div>
     </div>
+    <br><br><br><br><br>
     <div class="container-fluid" style="color: white">
         <div class="row" style="display: flex; align-items: center">
             <div class="col-xs-12 col-sm-2">
@@ -180,13 +195,13 @@
                 <h3>FOLLOW ME:</h3>
             </div>
             <div class="col-xs-12 col-sm-1">
-                <a href="http://twitter.com/mfjv88" class="footerItems" target="_blank"><img src="assets/images/Twitterbird.png" alt="twitter" height="40px" /></a>
+                <a href="http://twitter.com/mfjv88" target="_blank"><img src="assets/images/Twitterbird.png" class="footerItems" alt="twitter" height="40px" /></a>
             </div>
             <div class="col-xs-12 col-sm-1">
-                <a href="http://github.com/mfjv88" class="footerItems" target="_blank"><img src="assets/images/github.png" alt="github" height="40px" /> </a>
+                <a href="http://github.com/mfjv88" target="_blank"><img src="assets/images/github.png" class="footerItems" alt="github"  height="40px" /> </a>
             </div>
             <div class="col-xs-12 col-sm-1">
-                <a href="http://linkedin.com/in/miguelvacas" class="footerItems" target="_blank"><img src="assets/images/linkedin.png" alt="github" height="40px" /> </a>
+                <a href="http://linkedin.com/in/miguelvacas" target="_blank"><img src="assets/images/linkedin.png" class="footerItems" alt="github" height="40px" /> </a>
             </div>
         </div>
     </div>

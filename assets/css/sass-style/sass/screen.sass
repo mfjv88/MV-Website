@@ -22,3 +22,41 @@ div img
   -moz-border-radius: 50px
   -webkit-border-radius: 50px
   border-radius: 100px
+
+.footerItems
+  &:hover
+    opacity: 0.3
+
+.menu-option
+  text-decoration: none
+  color: white
+  &:hover
+    text-decoration: none
+    color: red
+    transition: 1s ease-in
+    cursor: grab
+
+.slicknav_menu
+  display: none
+
+@media (max-width: 1154px)
+  #menu
+    display: none
+  .slicknav_menu
+    display: block
+    &h3
+      font-size: 19px
+
+@media (max-width: 992px)
+  .btn
+    margin-bottom: 10px
+
+.hideme
+  font-size: 30px
+  opacity: 0
+  color: white
+
+.transparence h3
+  opacity: 0
+  &:hover
+    color: rgba(white, 0.5)

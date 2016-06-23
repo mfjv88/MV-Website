@@ -67,22 +67,82 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 13, ../sass/screen.sass */
+/* line 12, ../sass/screen.sass */
 #welcome {
   text-align: center;
   margin-bottom: 0px;
 }
 
-/* line 17, ../sass/screen.sass */
+/* line 16, ../sass/screen.sass */
 div img {
   border-radius: 6px;
 }
 
-/* line 20, ../sass/screen.sass */
+/* line 19, ../sass/screen.sass */
 #and-mig {
   width: 300px;
   height: 200px;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 100px;
+}
+
+/* line 27, ../sass/screen.sass */
+.footerItems:hover {
+  opacity: 0.3;
+}
+
+/* line 30, ../sass/screen.sass */
+.menu-option {
+  text-decoration: none;
+  color: white;
+}
+/* line 33, ../sass/screen.sass */
+.menu-option:hover {
+  text-decoration: none;
+  color: red;
+  transition: 1s ease-in;
+  cursor: grab;
+}
+
+/* line 39, ../sass/screen.sass */
+.slicknav_menu {
+  display: none;
+}
+
+@media (max-width: 1154px) {
+  /* line 43, ../sass/screen.sass */
+  #menu {
+    display: none;
+  }
+
+  /* line 45, ../sass/screen.sass */
+  .slicknav_menu {
+    display: block;
+  }
+  /* line 47, ../sass/screen.sass */
+  .slicknav_menuh3 {
+    font-size: 19px;
+  }
+}
+@media (max-width: 992px) {
+  /* line 51, ../sass/screen.sass */
+  .btn {
+    margin-bottom: 10px;
+  }
+}
+/* line 54, ../sass/screen.sass */
+.hideme {
+  font-size: 30px;
+  opacity: 0;
+  color: white;
+}
+
+/* line 59, ../sass/screen.sass */
+.transparence h3 {
+  opacity: 0;
+}
+/* line 61, ../sass/screen.sass */
+.transparence h3:hover {
+  color: rgba(255, 255, 255, 0.5);
 }
