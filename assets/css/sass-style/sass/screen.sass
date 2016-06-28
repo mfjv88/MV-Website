@@ -13,9 +13,6 @@
   @include centered
   margin-bottom: 0px
 
-div img
-  border-radius: 6px
-
 #and-mig
   width: 300px
   height: 200px
@@ -60,3 +57,92 @@ div img
   opacity: 0
   &:hover
     color: rgba(white, 0.5)
+
+.workwithitem
+  max-width: none !important
+  max-height: 100% !important
+
+.hovereffect
+  height: 250px
+  width: auto
+  float: left
+  overflow: hidden
+  position: relative
+  text-align: center
+  cursor: default
+  img
+    display: block
+    position: relative
+    width: auto
+    overflow: hidden
+    -webkit-transition: all 0.35s
+    transition: all 0.35s
+  .overlay
+    position: absolute
+    overflow: hidden
+    width: 80%
+    height: 80%
+    left: 10%
+    top: 10%
+    border-bottom: 1px solid #FFF
+    border-top: 1px solid #FFF
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s
+    transition: opacity 0.35s, transform 0.35s
+    -webkit-transform: scale(0,1)
+    -ms-transform: scale(0,1)
+    transform: scale(0,1)
+  h2
+    text-transform: uppercase
+    text-align: center
+    font-weight: 0
+    position: relative
+    font-size: 17px
+    background-color: transparent
+    color: #FFF
+    opacity: 0
+    filter: alpha(opacity=0)
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s
+    transition: opacity 0.35s, transform 0.35s
+    -webkit-transform: translate3d(0,-100%,0)
+    transform: translate3d(0,-100%,0)
+  a, p
+    margin-top: 10px
+    color: #FFF
+    font-size: 19px
+    opacity: 0
+    filter: alpha(opacity=0)
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s
+    transition: opacity 0.35s, transform 0.35s
+    -webkit-transform: translate3d(0,100%,0)
+    transform: translate3d(0,100%,0)
+
+.portfolio-blurb
+  display: flex
+  align-items: center !important
+  margin: 0
+  height: 250px
+  width: auto
+  background-color: rgba(blue, 0.3)
+  text-align: center
+  font-size: 15px
+
+.hovereffect:hover
+  .overlay
+    opacity: 1
+    filter: alpha(opacity=100)
+    -webkit-transform: scale(1)
+    -ms-transform: scale(1)
+    transform: scale(1)
+  img
+    filter: url('data:image/svg+xmlcharset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter')
+    filter: brightness(0.6)
+    -webkit-filter: brightness(0.6)
+  a:hover
+    color: rgba(white, 0.7)
+  a, p, h2
+    opacity: 1
+    text-decoration: none
+    text-decoration-color: currentColor
+    filter: alpha(opacity=100)
+    -webkit-transform: translate3d(0,0,0)
+    transform: translate3d(0,0,0)

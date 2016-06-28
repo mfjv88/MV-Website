@@ -32,8 +32,6 @@ $(document).ready(function(){
             }
         });
     });
-  $('iframe').load(function(){
-    console.log("test");
-    $('.freebirdFormviewerViewFormBanner').css('height: 150px;');
-  });
+  
+
 });
