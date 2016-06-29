@@ -120,35 +120,52 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     font-size: 19px;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   /* line 48, ../sass/screen.sass */
+  .overlay {
+    height: 59% !important;
+  }
+
+  /* line 50, ../sass/screen.sass */
+  .portfolio-blurb {
+    height: 198px !important;
+  }
+}
+@media (max-width: 992px) {
+  /* line 54, ../sass/screen.sass */
   .btn {
     margin-bottom: 10px;
   }
+
+  /* line 56, ../sass/screen.sass */
+  .portfolio-blurb {
+    padding: 20px;
+    height: auto !important;
+  }
 }
-/* line 51, ../sass/screen.sass */
+/* line 61, ../sass/screen.sass */
 .hideme {
   font-size: 30px;
   opacity: 0;
   color: white;
 }
 
-/* line 56, ../sass/screen.sass */
+/* line 66, ../sass/screen.sass */
 .transparence h3 {
   opacity: 0;
 }
-/* line 58, ../sass/screen.sass */
+/* line 68, ../sass/screen.sass */
 .transparence h3:hover {
   color: rgba(255, 255, 255, 0.5);
 }
 
-/* line 61, ../sass/screen.sass */
+/* line 71, ../sass/screen.sass */
 .workwithitem {
   max-width: none !important;
   max-height: 100% !important;
 }
 
-/* line 65, ../sass/screen.sass */
+/* line 75, ../sass/screen.sass */
 .hovereffect {
   height: 250px;
   width: auto;
@@ -158,7 +175,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-align: center;
   cursor: default;
 }
-/* line 73, ../sass/screen.sass */
+/* line 83, ../sass/screen.sass */
 .hovereffect img {
   display: block;
   position: relative;
@@ -167,7 +184,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-transition: all 0.35s;
   transition: all 0.35s;
 }
-/* line 80, ../sass/screen.sass */
+/* line 90, ../sass/screen.sass */
 .hovereffect .overlay {
   position: absolute;
   overflow: hidden;
@@ -183,7 +200,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transform: scale(0, 1);
   transform: scale(0, 1);
 }
-/* line 94, ../sass/screen.sass */
+/* line 104, ../sass/screen.sass */
 .hovereffect h2 {
   text-transform: uppercase;
   text-align: center;
@@ -199,7 +216,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-transform: translate3d(0, -100%, 0);
   transform: translate3d(0, -100%, 0);
 }
-/* line 108, ../sass/screen.sass */
+/* line 118, ../sass/screen.sass */
 .hovereffect a, .hovereffect p {
   margin-top: 10px;
   color: #FFF;
@@ -212,7 +229,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: translate3d(0, 100%, 0);
 }
 
-/* line 119, ../sass/screen.sass */
+/* line 129, ../sass/screen.sass */
 .portfolio-blurb {
   display: flex;
   align-items: center !important;
@@ -224,7 +241,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-size: 15px;
 }
 
-/* line 130, ../sass/screen.sass */
+/* line 140, ../sass/screen.sass */
 .hovereffect:hover .overlay {
   opacity: 1;
   filter: alpha(opacity=100);
@@ -232,17 +249,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transform: scale(1);
   transform: scale(1);
 }
-/* line 136, ../sass/screen.sass */
+/* line 146, ../sass/screen.sass */
 .hovereffect:hover img {
   filter: url('data:image/svg+xmlcharset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
   filter: brightness(0.6);
   -webkit-filter: brightness(0.6);
 }
-/* line 140, ../sass/screen.sass */
+/* line 150, ../sass/screen.sass */
 .hovereffect:hover a:hover {
   color: rgba(255, 255, 255, 0.7);
 }
-/* line 142, ../sass/screen.sass */
+/* line 152, ../sass/screen.sass */
 .hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
   opacity: 1;
   text-decoration: none;
