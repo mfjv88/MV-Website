@@ -150,7 +150,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 
   /* line 65, ../sass/screen.sass */
-  .jumbotron {
+  #portfolio {
     padding: 0px !important;
   }
 
