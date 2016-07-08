@@ -30,9 +30,16 @@ body, span, a
   &:hover
     opacity: 0.3
 
-.menu-option
+@mixin anchor
   text-decoration: none
   color: white
+
+.menu-option
+  @include anchor
+  &:visited
+    @include anchor
+  &:focus
+    @include anchor
   &:hover
     text-decoration: none
     color: red
