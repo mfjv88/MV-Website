@@ -167,7 +167,6 @@ body, span, a {
 .flexing {
   display: flex;
   justify-content: center;
-  margin: 3% auto;
 }
 
 /* line 81, ../sass/screen.sass */
