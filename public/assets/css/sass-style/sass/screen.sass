@@ -12,6 +12,13 @@
 @mixin centered
   text-align: center
 
+@mixin flex($wrapper)
+  display: flex
+  flex-wrap: $wrapper
+  align-items: center
+  justify-content: center
+
+
 body, span, a
   font-family: 'Varela Round', sans-serif
 
@@ -72,11 +79,32 @@ body, span, a
 @media (max-width: 768px)
   #designedby
     text-align: center !important
+  .footerItems
+    text-align: center !important
+  #profile
+    display: inherit
+
+@media (min-width: 992px) and (max-width: 1199px)
+  #profile
+    flex-wrap: nowrap !important
+
+@media (min-width: 768px) and (max-width: 1199px)
+  .unflex
+    flex-wrap: nowrap !important
+
+.unflex
+  @include flex(wrap)
+
+#profile
+  @include flex(wrap)
+
+.bg-filter
+  background-color: rgba(0, 0, 0, 0.6)
 
 .flexing
   display: flex
   justify-content: center
-  // margin: 3% auto
+  margin: 3% auto
 
 .header
   font-family: 'Raleway', sans-serif
