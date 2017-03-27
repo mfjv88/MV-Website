@@ -18,9 +18,19 @@
   align-items: center
   justify-content: center
 
+@mixin breaklines($amount)
+  margin: (27.78px * $amount) auto
+
+
 body, span, a
   font-family: 'Varela Round', sans-serif
   color: white
+
+ul#menu
+  list-style: none
+  img
+    border-radius: 6px
+    margin: 10px
 
 #welcome
   @include centered
@@ -36,12 +46,30 @@ body, span, a
   -moz-border-radius: 50px
   -webkit-border-radius: 50px
   border-radius: 100px
+  cursor: pointer
 
-ul#menu
-  list-style: none
+#myModal
+  .modal-content
+    width: 70%
   img
-    border-radius: 6px
-    margin: 10px
+    width: 100%
+
+#bio
+  & span:last-child
+    font-size: 18px
+
+div.container-fluid#mytools
+  & section
+    margin-bottom: 5px
+    & img.workwithitem.hideme
+      max-width: 150px !important
+      display: inline
+      margin-bottom: 5px
+    & span.hideme
+      color: black
+      font-size: 20px
+      font-weight: 800
+
 
 .footerItems
   &:hover
@@ -65,7 +93,11 @@ ul#menu
 .slicknav_menu
   display: none
 
-.footer
+.message-ideas
+  @include breaklines(23)
+
+.message-ctrl
+  @include breaklines(18)
 
 @media (max-width: 1154px)
   #menu
@@ -111,6 +143,12 @@ ul#menu
 
 .bg-filter
   background-color: rgba(0, 0, 0, 0.5)
+  & .nav-menu-container
+    margin-bottom: 166.68px
+    & > .row
+      padding: 10px
+  & #portfolio
+    margin-top: 138.9px
 
 .flexing
   display: flex
@@ -196,8 +234,11 @@ div.container-fluid
   .plussign
     margin: 36px auto
 
-#portfolio, #contactme > .jumbotron
+#portfolio, #contactme > .jumbotron, #aboutme
   background-color: rgba(255, 255, 255, 0.1)
+
+#contactme
+  margin-bottom: 138.9px
 
 .portfolio-blurb
   min-height: 250px
@@ -210,6 +251,9 @@ div.container-fluid
   padding: 10px
   display: flex
   align-items: center
+  a.menu-option
+    font-size: 14px
+    font-weight: bold
 
 .hovereffect:hover
   .overlay

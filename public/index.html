@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="assets/css/slicknav.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
-    <link href="assets/sass/style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
     <title>Miguel Vacas - Welcome to my page</title>
 </head>
 <body>
@@ -27,8 +27,8 @@
     <div class="parallax-container" data-parallax="scroll" data-position="top" data-speed="0.3" data-image-src="assets/images/northern-lights2000.png">
         <div class="bg-filter">
             <!-- First Section with Background Filter -->
-            <div class="container-fluid">
-                <div class="row" style="padding: 10px">
+            <div class="container-fluid nav-menu-container">
+                <div class="row">
                   <!-- Navbar -->
                     <ul id="menu">
                         <div class="col-xs-12 col-sm-2 col-md-2">
@@ -50,12 +50,6 @@
                     <!-- End of Navbar -->
                 </div>
             </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
             <!-- Header -->
             <div class="container">
                 <div class="row">
@@ -64,60 +58,18 @@
                     </div>
                 </div>
             </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br><br><br><br><br><br>
-            <div class="container">
+
+            <div class="container message-ideas">
                 <div class="row text-center">
                     <div class="col-xs-12">
                         <span class="hideme header">Take your ideas out of this world...</span>
                     </div>
                 </div>
             </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+
             <!-- Bio Section -->
             <div class="container">
-                <div class="jumbotron" id="aboutme" style="background-color: rgba(255, 255, 255, 0.1); color: white">
+                <div class="jumbotron" id="aboutme">
                     <div class="row">
                         <div class="col-xs-12 text-center header">
                             <h2>ABOUT ME</h2>
@@ -130,10 +82,10 @@
                         </div>
                         <!-- Modal -->
                         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                            <div class="modal-dialog" role="document" style="display: flex; justify-content: center;">
-                                <div class="modal-content" style="width: 70%">
+                            <div class="modal-dialog flexing" role="document">
+                                <div class="modal-content">
                                     <div class="modal-body text-center">
-                                        <img src="assets/images/miguel.gif" alt="Hello!" style="width: 100%" />
+                                        <img class="img-responsive" src="assets/images/miguel.gif" alt="Hello!"/>
                                     </div>
                                 </div>
                             </div>
@@ -142,34 +94,27 @@
                         <div class="col-xs-12 col-sm-12 col-md-6 text-justify" id="bio">
                             <br>
                             <br>
-                            <h3> Hi there! <br> <br> </h3> My name is Miguel Vacas: A musician turned entrepreneur who fell in love with coding. I like looking into challenges and figuring them out, no matter how long they take me; <b>I'll find a solution!</b> The good thing about
+                            <span><h3> Hi there! <br> <br> </h3> My name is Miguel Vacas: A musician turned entrepreneur who fell in love with coding. I like looking into challenges and figuring them out, no matter how long they take me; <b>I'll find a solution!</b> The good thing about
                             working with me is that I let you know if difficulty comes my way, how long it will take and, if I feel I need an extra hand or an expert from another industry on board (of course, if you agree), I know where to go. Also, if
-                            you have other people on your team, I have no problem collaborating with them, whether they'd be musicians, coders, designers, writers, gamers, marketers, entrepreneurs, investors, mongeese, chimpanzees or anything in-between.
+                            you have other people on your team, I have no problem collaborating with them, whether they'd be musicians, coders, designers, writers, gamers, marketers, entrepreneurs, investors, mongeese, chimpanzees or anything in-between.</span>
                             <br>
                             <br>
-                            <span style="font-size: 18px; text-align: center !important"> Write to me on <a href="#contactme" class="menu-option" style="font-weight: bolder"> <u>the section below (click here) </u> </a> and let me know how I can help YOU out! </span>
+                            <span class="text-center"> Write to me on <a href="#contactme" class="menu-option"> <u>the section below (click here) </u></a> and let me know how I can help YOU out! </span>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- End of Bio Section -->
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+            <br><br><br><br><br>
             <!-- End of First Section with Background Filter -->
         </div>
         <!-- End of First Section with Parallax -->
     </div>
     <!-- My tools/Mid Section -->
-    <div class="container-fluid">
-        <br>
-        <br>
-        <br>
+    <div class="container-fluid" id="mytools">
+        <br><br><br>
         <h2 class="text-center header">I WORK WITH</h2>
-        <br>
-        <br>
+        <br><br>
         <div class="row">
             <div class="col-xs-4 col-sm-4 col-md-1 text-center">
                 <img class="hideme workwithitem" src="assets/images/htmllogo.png" alt="web-devhtml">
@@ -194,30 +139,24 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-3">
                 <div class="row">
-                    <section style="margin-bottom: 5px">
+                    <section>
                         <div class="col-xs-12 text-center">
-                            <img class="hideme workwithitem" src="assets/images/strategyzer.png" alt="bmc-icon" style="max-width: 150px !important; display: inline; margin-bottom: 5px"> <span class="hideme" style="color: black; font-size: 20px; font-weight:800"> Tools:</span>
+                            <img class="hideme workwithitem" src="assets/images/strategyzer.png" alt="bmc-icon">
+                            <span class="hideme"> Tools:</span>
                         </div>
                     </section>
                     <div class="col-xs-12 text-center">
-                        <img class="hideme workwithitem" src="assets/images/bmc-icon-100.png" alt="bmc-icon" style="display: inline">
+                        <img class="hideme workwithitem" src="assets/images/bmc-icon-100.png" alt="bmc-icon">
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- End of mid-section -->
-    <br>
-    <br>
-    <br>
+    <br><br><br>
     <!-- Second section with Paralax -->
     <div class="parallax-container" data-parallax="scroll" data-position="top" data-speed="0.3" data-image-src="assets/images/ctrl.jpeg" data-natural-width="1400" data-natural-height="900">
         <div class="bg-filter">
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
             <!-- Portfolio -->
             <div class="container-fluid">
                 <div class="jumbotron" id="portfolio">
@@ -228,70 +167,68 @@
                     </div>
                     <br>
                     <div class="row">
-                        <div class="col-xs-12 col-sm-6 col-md-3 flexing">
-                            <div class="hovereffect">
-                                <img src="assets/images/MV250.png">
-                                <div class="overlay">
-                                    <h2>Codetrotters Project #1: <br>Profile Website</h2>
-                                    <p>
-                                        <a href="#">CLICK HERE TO SEE</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-3 flexing">
-                            <div class="portfolio-blurb">
-                                <span> This website started off as my first project! Although it is not the first version, the process has helped me learn the ways through how to make (and not to make) a website. Initially, this started at my coding school, <a href="http://www.codetrotters.com" target="_blank" class="menu-option" style="font-size: 18px; font-weight: bold"> Codetrotters. </a> </span>
-                            </div>
-                        </div>
+                      <div class="col-xs-12 col-sm-6 col-md-3 flexing">
+                          <div class="hovereffect">
+                              <img src="assets/images/videogame250.png" alt="">
+                              <div class="overlay">
+                                  <h2>Codetrotters: Intro to Web <br><br>Final Project: Lazarus</h2><br>
+                                  <p>
+                                      <a href="http://lazarusproject.herokuapp.com/" target="_blank">CLICK HERE TO SEE</a>
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-6 col-md-3 flexing">
+                          <div class="portfolio-blurb">
+                              <span class="text-justify"> This was my final project for the Codetrotters Intro to Web course: Lazarus; inspired by David Bowie's last single <a class="menu-option" href="https://en.wikipedia.org/wiki/David_bowie" target="_blank">(Read up if you don't know who he is). </a> It is a simple single-leveled Zelda-based game that put my JavaScript knowledge to the test... And it was a great first experience! </span>
+                          </div>
+                      </div>
                         <div class="col-xs-12 col-sm-6 col-md-3 flexing">
                             <div class="hovereffect">
                                 <img src="assets/images/todolist250.png" alt="todolist">
                                 <div class="overlay">
-                                    <h2>Codetrotters Project #2: <br>TO-DO LIST</h2>
+                                    <h2>Codetrotters: Intro to JavaScript <br><br>Final Project: Icaru</h2><br>
                                     <p>
-                                        <a href="https://slazietodolist.herokuapp.com/" target="_blank">CLICK HERE TO SEE</a>
+                                        <a href="http://www.icaru.co/" target="_blank">CLICK HERE TO SEE</a>
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-3 flexing">
                             <div class="portfolio-blurb">
-                                <span> This project was completed as a group effort with other teammates at Codetrotters. The purpose of this is to create a sample to-do list app for a consumer. </span>
+                                <span class="text-justify"> This project was my final project for the Codetrotters Intro to JavaScript course. The <a class="menu-option" href="https://phaser.io/" target="_blank">Phaser.js</a> library was used for this project and since my inner childhood-gamer wanted to work with it, it was challenge I had to accept. Based on the Greek mythological character, Icarus. Thanks to <a class="menu-option" href="http://jdvelez.tumblr.com/" target="_blank"> José Daniel </a> for the help in arts.</span>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-xs-12 col-sm-6 col-md-3 flexing">
                             <div class="portfolio-blurb">
-                                <span> This was my final project for Codetrotters: Lazarus; inspired by David Bowie's last single <a class="menu-option" href="https://en.wikipedia.org/wiki/David_bowie" target="_blank" style="font-weight: bold">(Read up if you don't know who he is). </a> It is a simple single-leveled Zelda-based game that put my JavaScript knowledge to the test... And it was awesome! </span>
+                                <span class="text-justify"> <a class="menu-option" href="http://sharelov.com/" target="_blank">Sharelov</a> is a social media platform, created by <a class="menu-option" href="https://chatagency.com/" target="_blank">Chat Agency</a>, where I have formed part of the front-end development team by modifying and creating pages for the webpage and the platform. </span>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-3 flexing">
                             <div class="hovereffect">
                                 <img src="assets/images/videogame250.png" alt="">
                                 <div class="overlay">
-                                    <h2>Codetrotters Project #3: <br>Final Project</h2>
-
+                                    <h2>Freelance Project: <br><br>Sharelov <br>(Front-end)</h2><br>
                                     <p>
-                                        <a href="http://lazarusproject.herokuapp.com/" target="_blank">CLICK HERE TO SEE</a>
+                                        <a href="http://sharelov.com/" target="_blank">CLICK HERE TO SEE</a>
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-3 flexing">
                             <div class="portfolio-blurb">
-                                <span> As a freelancer, I was asked to do the front-end web design for this project. In collaboration with Friskies Puerto Rico and Chat Agency's PHP Masters, this web app was an awesome competition for consumers!</span>
+                                <span class="text-justify"> As part of my freelance work, I was asked to develop the front-end of this project in <a class="menu-option" href="https://laravel.com/" target="_blank">Laravel</a> (PHP). In collaboration with Ferrero Puerto Rico and Chat Agency's PHP Masters, this web app was made to empower women for the International Women's Day!</span>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-3 flexing">
                             <div class="hovereffect">
                                 <img src="assets/images/friskiesproj250.png" alt="">
                                 <div class="overlay">
-                                    <h2>Freelance <br> Project #1: <br>Friskies PR Web App</h2>
-
+                                    <h2>Freelance Project: <br> Kinder Bueno Web App <br><br>(Laravel - <br> Front-end)</h2><br>
                                     <p>
-                                        <a href="http://friskiespr.com/" target="_blank">CLICK HERE TO SEE</a>
+                                        <a href="https://kinderbuenopr.com/" target="_blank">CLICK HERE TO SEE</a>
                                     </p>
                                 </div>
                             </div>
@@ -301,49 +238,13 @@
                 </div>
             </div>
             <!-- End of Portfolio -->
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div class="container">
+            <div class="container message-ctrl">
                 <div class="row text-center">
                     <div class="col-xs-12">
                         <span class="hideme header">... And everything is under YOUR CTRL.</span>
                     </div>
                 </div>
             </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
             <!-- Contact me Section -->
             <div class="container" id="contactme">
                 <div class="jumbotron">
@@ -372,11 +273,7 @@
                 </div>
             </div>
             <!-- End of Contact me Section -->
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+
             <!-- Footer -->
             <div class="container-fluid">
                 <div class="row unflex">
