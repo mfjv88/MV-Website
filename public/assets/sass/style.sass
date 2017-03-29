@@ -4,8 +4,6 @@
   Import this file using the following HTML or equivalent:
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 
-// @import compass/reset
-
 @mixin padding
   padding: 0px !important
 
@@ -47,6 +45,7 @@ ul#menu
   -webkit-border-radius: 50px
   border-radius: 100px
   cursor: pointer
+  margin-top: 62px
 
 #myModal
   .modal-content
@@ -137,9 +136,6 @@ div.container-fluid#mytools
     flex-wrap: nowrap !important
 
 .unflex
-  @include flex(wrap)
-
-#profile
   @include flex(wrap)
 
 .bg-filter
@@ -235,6 +231,13 @@ div.container-fluid
     color: black
   .plussign
     margin: 36px auto
+
+.footer
+  margin: 0 0 15px
+  & h3
+    margin: 10px 0
+  & p
+    margin: 15px 0
 
 #portfolio, #contactme > .jumbotron, #aboutme
   background-color: rgba(255, 255, 255, 0.1)

@@ -27,7 +27,8 @@ ul#menu {
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 100px;
-  cursor: pointer; }
+  cursor: pointer;
+  margin-top: 62px; }
 
 #myModal .modal-content {
   width: 70%; }
@@ -112,12 +113,6 @@ div.container-fluid#mytools section {
     flex-wrap: nowrap !important; } }
 
 .unflex {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center; }
-
-#profile {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -216,6 +211,13 @@ div.container-fluid > h2.header, div.container-fluid .plussign {
 
 div.container-fluid .plussign {
   margin: 36px auto; }
+
+.footer {
+  margin: 0 0 15px; }
+  .footer h3 {
+    margin: 10px 0; }
+  .footer p {
+    margin: 15px 0; }
 
 #portfolio, #contactme > .jumbotron, #aboutme {
   background-color: rgba(255, 255, 255, 0.1); }
