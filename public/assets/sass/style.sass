@@ -19,6 +19,12 @@
 @mixin breaklines($amount)
   margin: (27.78px * $amount) auto
 
+@mixin workwithmargin
+  margin: 15px 5px
+
+@mixin menu_logo
+  margin: 5px 0
+  width: 60px
 
 body, span, a
   font-family: 'Varela Round', sans-serif
@@ -28,7 +34,8 @@ ul#menu
   list-style: none
   img
     border-radius: 6px
-    margin: 10px
+    +menu_logo
+
 
 #welcome
   @include centered
@@ -106,18 +113,24 @@ div.container-fluid#mytools
     display: block
     &h3
       font-size: 19px
+    img
+      +menu_logo
 
 @media (max-width: 1024px)
   .overlay
     height: 70% !important
 
-@media (max-width: 992px)
+@media (max-width: 991px)
   .btn
     margin-bottom: 10px
   #portfolio
     @include padding
   #bio
     text-align: center !important
+  #mytools
+    .col-xs-6.col-sm-6.col-md-3.text-right, .col-xs-6.col-sm-6.col-md-3.text-left
+      text-align: center
+
 
 @media (max-width: 768px)
   #designedby
@@ -134,6 +147,10 @@ div.container-fluid#mytools
 @media (min-width: 768px) and (max-width: 1199px)
   .unflex
     flex-wrap: nowrap !important
+
+@media (max-width: 424px)
+  .workwithitem
+    height: 60px
 
 .unflex
   @include flex(wrap)
@@ -165,8 +182,14 @@ div.container-fluid#mytools
     color: rgba(white, 0.5)
 
 .workwithitem
-  max-width: none !important
-  max-height: 100% !important
+  max-width: 100%
+  max-height: 75px
+  +workwithmargin
+
+.workwithitem2
+  max-width: 100%
+  max-height: 125px
+  +workwithmargin
 
 .hovereffect
   border-radius: 5px

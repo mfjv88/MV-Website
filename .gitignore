@@ -50,3 +50,6 @@ $RECYCLE.BIN/
 
 # Gulp
 gulpfile.js
+
+# Old files/Documents
+/oldfiles
