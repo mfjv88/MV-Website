@@ -102,7 +102,7 @@ div.container-fluid#mytools section {
   #mytools .col-xs-6.col-sm-6.col-md-3.text-right, #mytools .col-xs-6.col-sm-6.col-md-3.text-left {
     text-align: center; } }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #designedby {
     text-align: center !important; }
   .footerItems {
@@ -157,12 +157,12 @@ div.container-fluid#mytools section {
 .workwithitem {
   max-width: 100%;
   max-height: 75px;
-  margin: 15px 5px; }
+  margin: 25px 5px; }
 
 .workwithitem2 {
   max-width: 100%;
   max-height: 125px;
-  margin: 15px 5px; }
+  margin: 25px 5px; }
 
 .hovereffect {
   border-radius: 5px;
